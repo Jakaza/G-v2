@@ -1,0 +1,16 @@
+
+.hero{
+    width: 100%;
+    height: calc(100vh - 150px);
+    background: linear-gradient(to right,  rgb(248, 248, 248) 0%, rgb(248, 248, 248)  60%, #5d82e8 50%, #5d82e8 100%);
+}
+
+.hero .inner {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: calc(-100px + 80vh);
+    margin-bottom: 100px;
+}

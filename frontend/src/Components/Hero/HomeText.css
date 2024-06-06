@@ -1,0 +1,62 @@
+.homeText p {
+    font-size: 16px;
+    margin: 0px;
+    line-height: 150%;
+    font-family: 'Karla', sans-serif;
+    color: rgb(56, 56, 56);
+    padding: 8px 0;
+}
+
+.homeText h1 {
+    margin: -4px 0px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #383838;
+}
+.homeText .adjust {
+    font-size: 1.06rem;
+}
+.homeText p {
+    font-family: Montserrat, sans-serif;
+}
+.download{
+        background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
+        color: rgb(248, 248, 248);
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease 0s;
+        width: auto;
+        height: auto;
+        font-size: 12px;
+        margin: 0px;
+        padding: 12px;
+        border-radius: 5px;
+}
+
+.download:hover {
+    color: #f8f8f8;
+    background: linear-gradient(99deg,#6A98F0 0%,#4961DC 130%);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+
+.socialMedia .links{
+}
+.socialMedia .links ul{
+    display: flex;
+    padding: 15px 0;
+    width: max-content;
+}
+
+.socialMedia .links ul li{
+    padding-right: 28px;
+}
+
+.fa-brands{
+    font-size: 25px;
+    color: rgb(109, 131, 242);;
+}
