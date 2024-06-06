@@ -1,5 +1,10 @@
+.skillSet{
+    margin: 80px 0;
+    padding: 20px 0;
+}
+
+
 .mainSkillsContainer{
-    height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,6 +15,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
 }
 .skill{
     display: flex;
@@ -30,7 +36,7 @@
 }
 
 .parallax-inner {
-    transform: translate3d(0%, -316.809px, 0px);
+    /* transform: translate3d(0%, -316.809px, 0px); */
     background-color: green;
 }
 
@@ -48,31 +54,4 @@
     top:50px;
     left:100%;
     font-size:23px;
-}
-.s2 {
-    top:50px;left:100%;font-size:23px;
-}
-.s3 {
-    top:0;left:0;font-size:25px;
-}
-.s4 {
-    top:200px;left:-60px;font-size:14px;
-}
-.s5 {
-    top:30%;left:35%;font-size:18px;
-}
-.s6 {
-    top:40px;left:75%;font-size:12px;
-}
-.s7 {
-    top:380px;left:85%;font-size:18px;
-}
-.s8 {
-    top:320px;left:65%;font-size:18px;
-}
-.s9 {
-    top:350px;left:150px;font-size:20px;
-}
-.s10 {
-    top:120px;left:22%;font-size:12px;
 }
