@@ -1,0 +1,19 @@
+{
+  "name": "g-v2",
+  "version": "1.0.0",
+  "description": "Personal Porfolio To Showcase My Skills, Experience and projects i have worked on in the past",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jakaza/G-v2.git"
+  },
+  "author": "Themba G Chauke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jakaza/G-v2/issues"
+  },
+  "homepage": "https://github.com/Jakaza/G-v2#readme"
+}
