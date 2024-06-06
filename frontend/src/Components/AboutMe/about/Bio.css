@@ -1,0 +1,11 @@
+.bio{
+    width: 50%;
+}
+
+.bioParagraphs p{
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    padding-right: 50px;
+}

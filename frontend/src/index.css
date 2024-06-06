@@ -13,8 +13,11 @@ body{
 :root {
  --blue-color1: "#5d82e8";
 }
-
 .inner {
     margin: auto;
     width: 80%;
+}
+
+.bioTitle{
+    color:  #5d82e8;
 }

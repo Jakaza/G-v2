@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="inner">
         <div className="logo">
-         <img src={Logo} width="35px" alt="" srcset="" />
+         <img src={Logo} width="35px" alt=""  />
         </div>
         <div className="linksContainer">
           <ul className='links'>
