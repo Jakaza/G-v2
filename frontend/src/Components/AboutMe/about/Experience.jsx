@@ -13,14 +13,14 @@ const Experience = () => {
       description: "Assisted in designing, implementing, and managing cloud infrastructure solutions using AWS,Collaborated with senior engineers to deploy and maintain cloud-based application, Developed web applications from frontend to backend using JavaScript, NodeJS, and Spring Boot. And participated in code reviews and provided constructive feedback to peers.",
       tools: ["AWS", "Java", "SQL"]
     },
-    {
-      company: "Tech Mahindra",
-      start: 2023,
-      end: 2024,
-      role: "Junior Developer",
-      description: "Assisted in designing, implementing, and managing cloud infrastructure solutions using AWS,Collaborated with senior engineers to deploy and maintain cloud-based application, Developed web applications from frontend to backend using JavaScript, NodeJS, and Spring Boot. And participated in code reviews and provided constructive feedback to peers.",
-      tools: ["AWS", "Java", "SQL"]
-    }
+    // {
+    //   company: "Tech Mahindra",
+    //   start: 2023,
+    //   end: 2024,
+    //   role: "Junior Developer",
+    //   description: "Assisted in designing, implementing, and managing cloud infrastructure solutions using AWS,Collaborated with senior engineers to deploy and maintain cloud-based application, Developed web applications from frontend to backend using JavaScript, NodeJS, and Spring Boot. And participated in code reviews and provided constructive feedback to peers.",
+    //   tools: ["AWS", "Java", "SQL"]
+    // }
   ])
 
   return (
@@ -33,10 +33,12 @@ const Experience = () => {
         ))
         }
         </ul>
-        <div class="buttons">
-          <button disabled class="navigationButton">Prev</button>
-          <button disabled class="navigationButton">Next</button>
-         </div>
+        {experiences.length === 1 ? null : (
+        <div className="buttons">
+          <button disabled className="navigationButton">Prev</button>
+          <button disabled className="navigationButton">Next</button>
+        </div>
+      )}
     </div>
   )
 }
