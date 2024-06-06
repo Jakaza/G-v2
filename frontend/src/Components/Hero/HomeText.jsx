@@ -16,10 +16,10 @@ const HomeText = () => {
                 <a href="https://linkedin.com/in/g-themba-chauke" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                 </li>
                 <li>
-                <a href="https://twitter.com/ThembaG3"><i className="fa-brands fa-twitter-square"></i></a>
+                <a href="https://twitter.com/ThembaG3"><i class="fa-brands fa-stack-overflow"></i></a>
                 </li>
                 <li>
-                <a href="https://www.facebook.com/malume.jakaza"><i className="fa-brands fa-facebook-square"></i></a>
+                <a href="https://www.facebook.com/malume.jakaza"><i class="fa-brands fa-github"></i></a>
                 </li>
             </ul>
         </div>

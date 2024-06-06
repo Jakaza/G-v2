@@ -1,0 +1,15 @@
+.heading {
+    margin: 100px auto;
+}
+.heading h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgb(109, 131, 242);
+    text-align: center;
+    letter-spacing: 1px;
+}
+.heading p {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 15px 0;
+}
