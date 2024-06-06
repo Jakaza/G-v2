@@ -14,3 +14,7 @@
     height: calc(-100px + 80vh);
     margin-bottom: 100px;
 }
+
+.homeImage{
+    width: 50%;
+}

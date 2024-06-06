@@ -1,12 +1,16 @@
 import React from 'react'
-impor
+import './HomeImage.css'
 
 const HomeImage = () => {
   return (
-    <>
-    
-    
-    </>
+    <div className='profile'>
+    <div className="userProfile">
+        <div className="handsome">
+        </div>
+    </div>
+        <div className="line">
+        </div>
+    </div>
   )
 }
 

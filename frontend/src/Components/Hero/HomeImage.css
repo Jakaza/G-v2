@@ -1,0 +1,51 @@
+.profile{
+    width: 50%;
+    height: inherit;
+    padding: 5%;
+}
+
+.userProfile {
+    width: 300px;
+    height: 400px;
+    padding: 50px 0 0 0;
+    border-radius: 8px;
+    border: 4px solid  #ccd6f6;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.handsome {
+    width: inherit;
+    display: block;
+    height: inherit;
+    margin-top: -2.435em;
+    background-color: #fff;
+    border-radius: 8px;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    border: 4px solid  #5d82e8;
+    margin-left: -2.2em;
+    background-image: url(../../assets/profile.jpg);
+    position: relative;
+    overflow: hidden;
+}
+
+.handsome::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #0000004c 0%, #5d82e878 50%, #5d82e8a5 100%);
+    border-radius: 8px;
+    animation: overlayAnimation 6s infinite linear; 
+}
+
+
+@keyframes overlayAnimation {
+    0% { left: -100%; } 
+    100% { left: 200%; } 
+
+}
