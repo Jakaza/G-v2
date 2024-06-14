@@ -1,0 +1,43 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.skills {
+  padding: 50px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.skill svg {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.skill span {
+  font-size: 1em;
+  color: #333;
+}
