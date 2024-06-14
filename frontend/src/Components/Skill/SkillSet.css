@@ -1,23 +1,25 @@
-.skillSet{
+.skillSet {
     margin: 80px 0;
     padding: 20px 0;
 }
 
 
-.mainSkillsContainer{
+.mainSkillsContainer {
     display: flex;
     justify-content: space-between;
+
     align-items: center;
     position: relative;
 }
 
-.skills{
+.skills {
     width: 100%;
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
 }
-.skill{
+
+/* .skill{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,9 +27,9 @@
     width: max-content;
     border-radius: 50%;
     padding: 5px;
-}
+} */
 
-.skill h4{
+.skill h4 {
     padding: 8px 0 0 0;
 }
 
@@ -51,7 +53,25 @@
 }
 
 .s1 {
-    top:50px;
-    left:100%;
-    font-size:23px;
+    top: 50px;
+    left: 100%;
+    font-size: 23px;
+}
+
+.skill {
+    display: flex;
+    border-radius: 0.5rem;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(152, 192, 233);
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.skill img {
+    width: 2.5rem;
+    margin-right: 8px;
 }

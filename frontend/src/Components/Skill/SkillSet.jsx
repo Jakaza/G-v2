@@ -54,6 +54,21 @@ const SkillSet = () => {
       icon: "react-original",
       level: 98,
     },
+    {
+      name: "postman",
+      icon: "postman-original",
+      level: 98,
+    },
+    {
+      name: "bootstrap",
+      icon: "bootstrap-original",
+      level: 98,
+    },
+    {
+      name: "github",
+      icon: "github-original",
+      level: 98,
+    },
   ];
   return (
     <div className="skillSet">

@@ -111,10 +111,14 @@ const Projects = () => {
           <button onClick={() => handleFilterChange("JavaScript")}>
             JavaScript
           </button>
-          <button onClick={() => handleFilterChange("Shell")}>Shell</button>
-          <button onClick={() => handleFilterChange("Lua")}>Lua</button>
           <button onClick={() => handleFilterChange("Java")}>Java</button>
-          <button onClick={() => handleFilterChange("C")}>C</button>
+          <button onClick={() => handleFilterChange("Flutter")}>Flutter</button>
+          <button onClick={() => handleFilterChange("Spring Boot")}>
+            Spring Boot
+          </button>
+          <button onClick={() => handleFilterChange("Web Design")}>
+            Web Design
+          </button>
           {/* Add more filter buttons as needed */}
         </div>
         <div className="projects-grid">
