@@ -1,5 +1,6 @@
 
 .hero{
+    margin-top: 75px;
     width: 100%;
     height: calc(100vh - 150px);
     background: linear-gradient(to right,  rgb(248, 248, 248) 0%, rgb(248, 248, 248)  60%, #5d82e8 50%, #5d82e8 100%);
