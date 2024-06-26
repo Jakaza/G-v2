@@ -6,9 +6,10 @@ const ContactInfo = () => {
   return (
     <div className="contact-info">
       <div className="" style={{ color: "white" }}>
-        <h1>Contact</h1>
+        <h1>Personal Details</h1>
+        <br />
         <p>
-          If you want to know more about me or my work, or if you would just
+          If you want to know more about me or hire me, or if you would just
           like to say hello, send me a message. I'd love to hear from you.
         </p>
       </div>

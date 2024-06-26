@@ -23,3 +23,24 @@ footer {
 .heart {
     color: red;
 }
+
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+
+    .info-item {
+        align-items: flex-start;
+    }
+}

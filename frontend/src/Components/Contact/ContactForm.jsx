@@ -3,7 +3,10 @@ import "./ContactForm.css";
 
 const ContactForm = () => {
   return (
-    <div className="contact-form" style={{ borderRadius: "8px" }}>
+    <div
+      className="contact-form"
+      style={{ borderRadius: "8px", width: "100%" }}
+    >
       <h4>Connect with me</h4>
       {/* <p>
         If you want to know more about me or my work, or if you would just like

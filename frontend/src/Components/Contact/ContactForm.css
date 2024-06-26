@@ -26,7 +26,7 @@
 
 .btn {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #5d82e8;
     color: white;
     border: none;
     border-radius: 5px;
@@ -34,7 +34,7 @@
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #5d82e8d6;
 }
 
 .direct-email {
@@ -46,4 +46,13 @@
 
 .direct-email:hover {
     text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .contact-form {
+        width: 100%;
+    }
+
+
 }
