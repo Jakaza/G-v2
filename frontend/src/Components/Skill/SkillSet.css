@@ -58,20 +58,10 @@
     font-size: 23px;
 }
 
-.skill {
-    display: flex;
-    border-radius: 0.5rem;
-    align-items: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    background-color: rgb(152, 192, 233);
-    cursor: pointer;
-    margin-top: 1rem;
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+.skillSet {
+    margin: 0;
+    padding: 0;
 }
-
-.skill img {
-    width: 2.5rem;
-    margin-right: 8px;
 }

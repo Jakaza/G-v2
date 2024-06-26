@@ -8,19 +8,11 @@ const Contact = () => {
   return (
     <div className="inner">
       <section className="contact">
-        <div className="heading">
-          <h1>Contact</h1>
-          <p>
-            If you want to know more about me or my work, or if you would just
-            like to say hello, send me a message. I'd love to hear from you.
-          </p>
-        </div>
-
         <div className="contact-container">
           <ContactForm />
           <ContactInfo />
         </div>
-        <footer>
+        <footer style={{ color: "white" }}>
           Made with <span className="heart">❤️</span> by Themba G Chauke
         </footer>
       </section>

@@ -98,6 +98,8 @@ const Projects = () => {
       ? projectData
       : projectData.filter((project) => project.language === filter);
 
+  const isActive = (language) => language === filter;
+
   return (
     <div className="inner">
       <div className="heading" style={{ marginBottom: "5px" }}>
@@ -107,17 +109,23 @@ const Projects = () => {
 
       <div className="projects-container">
         <div className="filter-buttons" style={{ marginBottom: "75px" }}>
-          <button onClick={() => handleFilterChange("All")}>All</button>
-          <button onClick={() => handleFilterChange("JavaScript")}>
+          <button
+            className={isActive("All") ? "active" : ""}
+            onClick={() => handleFilterChange("All")}
+          >
+            All
+          </button>
+          <button
+            className={isActive("JavaScript") ? "active" : ""}
+            onClick={() => handleFilterChange("JavaScript")}
+          >
             JavaScript
           </button>
-          <button onClick={() => handleFilterChange("Java")}>Java</button>
-          <button onClick={() => handleFilterChange("Flutter")}>Flutter</button>
-          <button onClick={() => handleFilterChange("Spring Boot")}>
-            Spring Boot
-          </button>
-          <button onClick={() => handleFilterChange("Web Design")}>
-            Web Design
+          <button
+            className={isActive("Java") ? "active" : ""}
+            onClick={() => handleFilterChange("Java")}
+          >
+            Java
           </button>
           {/* Add more filter buttons as needed */}
         </div>

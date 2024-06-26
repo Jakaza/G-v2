@@ -22,6 +22,12 @@ body{
     color:  #5d82e8;
 }
 
+.bioTitle2{
+    color:  #5d82e8;
+    color:  #1c1c1c;
+    font-weight: 400;
+}
+
 @media (max-width: 768px) {
 .inner {
     margin: auto;

@@ -1,43 +1,58 @@
-.App {
-  font-family: Arial, sans-serif;
+.skill h4 {
+    padding: 8px 0 0 0;
 }
 
-.skills {
-  padding: 50px;
-  text-align: center;
+.skills__word-clouds {
+    z-index: -1;
 }
 
-.section-title {
-  font-size: 2em;
-  margin-bottom: 10px;
+.parallax-inner {
+    /* transform: translate3d(0%, -316.809px, 0px); */
+    background-color: green;
 }
 
-.section-subtitle {
-  font-size: 1.2em;
-  margin-bottom: 40px;
-  color: #666;
+.skills__word-clouds p {
+    position: absolute;
+    color: rgb(199, 208, 255);
+    z-index: -1;
+    left: 0px;
+    right: 0px;
+    font-weight: 900;
+    user-select: none;
 }
 
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.s1 {
+    top: 50px;
+    left: 100%;
+    font-size: 23px;
 }
 
 .skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100px;
+    display: flex;
+    border-radius: 0.5rem;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(152, 192, 233);
+    cursor: pointer;
+    margin-top: 1rem;
+    color: white;
 }
 
-.skill svg {
-  font-size: 3em;
-  margin-bottom: 10px;
+.skill img {
+    width: 2.5rem;
+    margin-right: 8px;
 }
 
-.skill span {
-  font-size: 1em;
-  color: #333;
+
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .skill {
+    width: 150px;
+    background-color: rgba(152, 193, 233, 0.1);
+  }
+
 }

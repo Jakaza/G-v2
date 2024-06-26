@@ -15,7 +15,9 @@ function App() {
       <AboutMe />
       <SkillSet />
       <Projects />
-      <Contact />
+      <footer className="footer">
+        <Contact />
+      </footer>
     </>
   );
 }
