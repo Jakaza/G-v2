@@ -1,29 +1,59 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./ContactForm.css";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_e9gpd5u", "template_m90uzig", form.current, {
+        publicKey: "LwLkoTVFtI2wt0kG3",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <div
       className="contact-form"
       style={{ borderRadius: "8px", width: "100%" }}
     >
       <h4>Connect with me</h4>
-      {/* <p>
-        If you want to know more about me or my work, or if you would just like
-        to say hello, send me a message. I'd love to hear from you.
-      </p> */}
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
-          <input type="text" id="name" placeholder="Enter your name" />
+          <input
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="Enter your name"
+          />
         </div>
         <div className="form-group">
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" placeholder="Enter your email" />
+          <input
+            type="email"
+            id="email"
+            name="user_email"
+            placeholder="Enter your email"
+          />
         </div>
         <div className="form-group">
           <label htmlFor="message">Message</label>
-          <textarea id="message" placeholder="Enter your message"></textarea>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Enter your message"
+          ></textarea>
         </div>
         <button type="submit" className="btn">
           Submit
