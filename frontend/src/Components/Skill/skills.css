@@ -36,6 +36,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     background-color: rgb(152, 192, 233);
+        background-color: rgba(152, 193, 233, 0.1);
     cursor: pointer;
     margin-top: 1rem;
     color: white;
