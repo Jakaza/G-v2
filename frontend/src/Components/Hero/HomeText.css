@@ -60,3 +60,32 @@
     font-size: 25px;
     color: rgb(109, 131, 242);;
 }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .homeText p {
+        font-size: 14px;
+    }
+
+    .homeText h1 {
+        font-size: 1.5rem;
+    }
+
+    .download {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .socialMedia .links ul {
+        width: 100%;
+        margin-top: 15px;
+        flex-direction: flex;
+        justify-content: space-around;
+    }
+
+    .socialMedia .links ul li {
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
+}

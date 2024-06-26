@@ -9,3 +9,17 @@
     color: #666;
     padding-right: 50px;
 }
+
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .bio {
+        width: 100%;
+        padding: 0;
+    }
+
+    .bioParagraphs p {
+        padding-right: 0;
+        font-size: 14px;
+    }
+}

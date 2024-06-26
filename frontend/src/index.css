@@ -21,3 +21,10 @@ body{
 .bioTitle{
     color:  #5d82e8;
 }
+
+@media (max-width: 768px) {
+.inner {
+    margin: auto;
+    width: 90%;
+}
+}

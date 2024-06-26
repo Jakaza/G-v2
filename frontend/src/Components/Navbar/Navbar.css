@@ -2,7 +2,6 @@
     position: fixed;
     top: 0px;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
     height: 60px;
     width: 100vw;
@@ -11,12 +10,23 @@
     z-index: 1000;
     overflow: hidden;
 }
+
 .navbar .inner {
     display: flex;
-    -webkit-box-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
     align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 35px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .linksContainer {
@@ -24,17 +34,21 @@
     unicode-bidi: isolate;
 }
 
+.linksContainer.open {
+    display: block;
+}
+
 .navbar .links {
-    margin: 0px;
+    margin: 0;
     list-style: none;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s ease;
 }
+
 ul {
     list-style: none;
-    padding: 0px;
+    padding: 0;
     font-size: 15px;
     line-height: 150%;
 }
@@ -47,4 +61,70 @@ ul {
 
 .navbar .links li a {
     color: rgb(109, 131, 242);
+}
+
+/* Media query for smartphones */
+@media (max-width: 767px) {
+    .linksContainer {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(248, 248, 248);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .linksContainer.open {
+        transform: translateX(0);
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar .links {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar .links li {
+        margin: 15px 0;
+    }
+}
+
+/* Media query for tablets and iPads */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .linksContainer {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        height: max-content;
+        width: 300px;
+        background-color: rgb(248, 248, 248);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .linksContainer.open {
+        transform: translateX(0);
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar .links {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .navbar .links li {
+        margin: 15px 0;
+    }
 }

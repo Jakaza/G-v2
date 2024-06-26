@@ -3,3 +3,27 @@
     display: flex;
     justify-content: space-between;
 }
+
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .aboutMeContent {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* .experienceBox .period {
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+
+    .experienceBox .content {
+        padding-left: 0;
+    }
+
+    .experienceBox .description {
+        font-size: 14px;
+        padding: 10px 0 5px 0;
+    } */
+}

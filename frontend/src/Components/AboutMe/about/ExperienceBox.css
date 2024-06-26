@@ -47,3 +47,29 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+
+    .experienceBox{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 100%;
+    height: max-content;
+    border-radius: 5px;
+    padding: 5px;
+    color: #666;
+    box-shadow: 0px 8px 6px -6px rgba(200, 200, 220, 0.58);
+}
+
+.experienceBox .content{
+    width: 100%;
+}
+
+
+    .description {
+        width: 100%;
+    }
+}

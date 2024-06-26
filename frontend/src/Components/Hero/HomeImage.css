@@ -49,3 +49,34 @@
     100% { left: 200%; } 
 
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .userProfile {
+        width: 250px;
+        height: 300px;
+        padding: 0;
+    }
+
+    .handsome {
+        /* margin-left: 0; */
+        margin-top: -25px;
+        margin-left: -15px;
+    }
+
+    .handsome::before {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #5d82e85f 0%, #5d82e847 50%, #5d82e85c 100%);
+        animation: none; /* Disable animation for smartphones */
+    }
+}
