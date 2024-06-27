@@ -15,19 +15,15 @@
 .skills {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+
     flex-wrap: wrap;
 }
 
-/* .skill{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: max-content;
-    border-radius: 50%;
-    padding: 5px;
-} */
+.skill{
+    margin: 20px;
+    min-width: 200px;
+}
 
 .skill h4 {
     padding: 8px 0 0 0;

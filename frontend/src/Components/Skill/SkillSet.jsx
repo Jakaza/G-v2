@@ -11,6 +11,12 @@ const SkillSet = () => {
       level: 70,
     },
     {
+      name: "spring",
+      slug: "Spring-Boot",
+      icon: "spring-original",
+      level: 70,
+    },
+    {
       name: "javascript",
       slug: "javascript",
       icon: "javascript-original",
@@ -53,6 +59,12 @@ const SkillSet = () => {
       level: 98,
     },
     {
+      name: "redis",
+      slug: "Redis",
+      icon: "redis-original",
+      level: 98,
+    },
+    {
       name: "amazonwebservices",
       slug: "AWS",
       icon: "amazonwebservices-original-wordmark",
@@ -80,6 +92,24 @@ const SkillSet = () => {
       name: "github",
       slug: "Github",
       icon: "github-original",
+      level: 98,
+    },
+    {
+      name: "figma",
+      slug: "Figma",
+      icon: "figma-original",
+      level: 98,
+    },
+    {
+      name: "docker",
+      slug: "docker",
+      icon: "docker-original",
+      level: 98,
+    },
+    {
+      name: "jira",
+      slug: "Jira",
+      icon: "jira-original",
       level: 98,
     },
   ];

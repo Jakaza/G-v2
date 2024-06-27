@@ -1,3 +1,6 @@
+
+
+
 .homeText p {
     font-size: 16px;
     margin: 0px;
@@ -62,6 +65,12 @@
 }
 
 
+
+.homeText p, .homeText h1 , 
+.socialMedia .links {
+    padding: 15px 0;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .homeText p {
@@ -89,3 +98,5 @@
         padding-bottom: 15px;
     }
 }
+
+

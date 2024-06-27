@@ -18,11 +18,14 @@
 }
 
 .project-card {
+  position: relative;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 20px;
   text-align: center;
+  min-height: 200px;
+  overflow: hidden;
+  height: max-content;
 }
 
 .project-card h3 {
@@ -35,9 +38,31 @@
   margin: 10px 0;
 }
 
-.project-links a {
+.project-links {
+  position: relative;
+  margin-top: 10px;
+}
+
+
+
+/* .project-links a {
+  position: relative;
   display: inline-block;
-  padding: 10px 20px;
+  margin-right: 10px;
+} */
+
+.project-links .link-icon {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 16px;
+  color: #616161;
+}
+
+.project-links a  , .project-links span{
+  position: relative;
+  display: inline-block;
+  /* padding: 10px 20px; */
   border: 1px solid rgb(152, 192, 233);
   border-radius: 5px;
   color: #007bff;
@@ -67,7 +92,7 @@
 .filter-buttons button {
   padding: 10px 20px;
   border: 1px solid #6ba1db;
-  border: 1px solid rgba(152, 193, 233, 0.594);;
+  border: 1px solid rgba(152, 193, 233, 0.594);
   border-radius: 5px;
   background-color: #fff;
   color: #007bff;
@@ -80,6 +105,54 @@
   color: #fff;
 }
 
+.preview , .github {
+  padding: 0;
+  margin: 0 8px;
+}
+
+.project-title{
+  /* background-color: #007bff; */
+    width: 100%;
+   height: 80px;
+   padding: 15px 0 10px 0;
+}
+
+.project-title p {
+  color: #616161;
+  font-size: 14px;
+}
+
+
+.project-title h3{
+  padding: 10px 0;
+}
+.project-languages {
+  /* background-color: #3cff00; */
+  width: 100%;
+  height: 60px;
+  padding: 8px 0;
+  font-size: 12px;
+}
+
+.project-tool{
+   background-color: rgba(152, 193, 233, 0.228);
+   padding: 6px;
+   height: max-content;
+   border-radius: 8px;
+}
+
+.project-links{
+  bottom: 0;
+  left: 0;
+  padding: 8px 0;
+  width: 100%;
+  position: absolute;
+
+}
+.project-links a , .project-links span{
+  padding: 5px 10px;
+  color:  rgba(152, 193, 233, 0.594);
+}
 
 @media (max-width: 768px) {
   .projects-container {

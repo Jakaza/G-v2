@@ -18,7 +18,7 @@
 .services {
     display: flex;
     justify-content: space-around;
-    padding: 0 70px;
+    padding: 30px 70px;
     background-color: #007bff;
     background-color: rgba(152, 193, 233, 0.162);
 }
