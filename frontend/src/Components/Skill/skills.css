@@ -52,6 +52,7 @@
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
   .skill {
+     min-width: 150px; 
     width: 150px;
     background-color: rgba(152, 193, 233, 0.1);
   }

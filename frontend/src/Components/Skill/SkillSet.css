@@ -56,8 +56,23 @@
 
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
+
+.skills {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+
 .skillSet {
     margin: 0;
     padding: 0;
 }
+
+.skill {
+    margin: 10px 0;
+    min-width: 160px; /* Remove min-width for smartphones */
+  }
 }
+

@@ -69,39 +69,22 @@ const projectData = [
     description: "Barber Shop For Client To Book Seat Online",
     stars: 126,
     language: "Java",
-    tools: ["Spring-Boot", "Thymeleaf", "Javascript", "PostgreSQL"],
+    tools: ["Spring-Boot", "Thymeleaf", "PostgreSQL"],
     icon: "😎🖋️",
     status: false,
     link: "https://github.com/Jakaza/barber-shop",
   },
+
   {
-    title: "termux2k",
-    description: "CLI Dev Setup in Your Hands",
-    stars: 125,
-    language: "Shell",
-    tools: ["Javascript", "HTML", "CSS", "ReactJs"],
-    icon: "💻🖱️",
-    link: "#",
-  },
-  {
-    title: "tdo.nvim",
-    description: "Fast & Simple Notes in Neovim",
+    title: "Personal Portfolio",
+    description: "Demostrate my skills in the field of software development.",
     stars: 44,
-    language: "Lua",
-    tools: ["Javascript", "HTML", "CSS"],
+    language: "JavaScript",
+    tools: ["ReactJs", "NodeJs", "Strapi", "PostgreSQL"],
+    status: true,
     icon: "📓🖊️",
-    link: "#",
+    link: "https://github.com/Jakaza/G-v2",
   },
-  {
-    title: "polyquine",
-    description: "source = output, in code",
-    stars: 39,
-    language: "C",
-    tools: ["Javascript", "HTML", "CSS"],
-    icon: "🔠🔡",
-    link: "#",
-  },
-  // Add more project data as needed
 ];
 
 const Projects = () => {
