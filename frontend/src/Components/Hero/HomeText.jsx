@@ -18,12 +18,12 @@ const HomeText = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/malume.jakaza">
+              <a href="https://github.com/jakaza">
                 <i className="fa-brands fa-github"></i>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/ThembaG3">
+              <a href="https://stackoverflow.com/users/22413862/themba-g-chauke">
                 <i className="fa-brands fa-stack-overflow"></i>
               </a>
             </li>
