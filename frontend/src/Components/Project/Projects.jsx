@@ -52,7 +52,7 @@ const projectData = [
     tools: ["Javascript", "ReactJS", "openai", "API"],
     status: true,
     icon: "📂📄",
-    link: "#",
+    link: "https://github.com/Jakaza/ChatWiz",
   },
   {
     title: "IP Finder",
