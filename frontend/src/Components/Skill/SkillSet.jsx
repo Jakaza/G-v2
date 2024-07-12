@@ -119,7 +119,7 @@ const SkillSet = () => {
         <div className="heading">
           <h1>My Skills</h1>
           <p>
-            Here you will find my current array of skills mostly in terms of
+            Here you will find array of skills mostly in terms of
             programming and technology
           </p>
         </div>
