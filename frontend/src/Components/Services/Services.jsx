@@ -22,16 +22,7 @@ function Services() {
             experience design, and search engine optimization.
           </p>
         </div>
-        <div className="service">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
-          <h4>Mobile Application Development</h4>
-          <p>
-            We provide a range of mobile application development services
-            including custom mobile development on Android platforms, building
-            cross-platform apps, designing user experiences, and integrating
-            novel mobile interfaces such as chat and voice.
-          </p>
-        </div>
+
         <div className="service">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
 
@@ -44,6 +35,19 @@ function Services() {
             to optimize the user experience.
           </p>
         </div>
+
+        
+        <div className="service">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
+          <h4>Mobile Application Development</h4>
+          <p>
+            We provide a range of mobile application development services
+            including custom mobile development on Android platforms, building
+            cross-platform apps, designing user experiences, and integrating
+            novel mobile interfaces such as chat and voice.
+          </p>
+        </div>
+        
       </div>
     </div>
   );
