@@ -7,10 +7,10 @@ const Experience = () => {
   const [experiences, setExperiences] = useState([
     {
       company: "Tech Mahindra",
-      start: 2022,
-      end: 2023,
+      start: 2023,
+      end: 2024,
       role: "Intern",
-      description: "Assisted in designing, implementing, and managing cloud infrastructure solutions using AWS,Collaborated with senior engineers to deploy and maintain cloud-based application, Developed web applications from frontend to backend using JavaScript, NodeJS, and Spring Boot. And participated in code reviews and provided constructive feedback to peers.",
+      description: "I assisted in designing, implementing, and managing cloud infrastructure solutions using AWS, collaborated with senior engineers to deploy and maintain cloud-based applications, developed web applications from frontend to backend using JavaScript, NodeJS, and Spring Boot, and participated in code reviews, providing constructive feedback to peers.",
       tools: ["AWS", "Java", "SQL"]
     },
     // {
