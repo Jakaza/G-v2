@@ -15,6 +15,17 @@ const projectData = [
     github: "github",
   },
   {
+    title: "Mzansi-Real-Estate",
+    description: "Property to rent in South Africa",
+    stars: 242,
+    language: "JavaScript",
+    tools: ["ReactJS", "NodeJs", "Prisma", "MongoDB"],
+    icon: "📁👾",
+    link: "https://github.com/Jakaza/mzansi-real-estate",
+    status: true,
+    github: "github",
+  },
+  {
     title: "CloudSync",
     description: "Frontend Cloud. Build, and deploy personalized web",
     stars: 214,
