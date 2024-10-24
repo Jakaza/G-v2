@@ -6,6 +6,8 @@ const authRouter = require("./routes/auth");
 var app = express()
 initDb();
 
+app.use(express.json());
+
 app.use("/api/auth", authRouter)
 
 const PORT = process.env.PORT || 3000
