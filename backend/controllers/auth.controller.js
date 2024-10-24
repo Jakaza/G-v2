@@ -1,10 +1,9 @@
-const express = require('express')
-const router = express.Router()
 const bcrypt = require('bcrypt');
 const User = require('../models/user')
 const jwt = require('jsonwebtoken')
 
-router.post("/login", async (req, res) =>{
+
+const login = async (req, res) => {
     const {email , password} = req.body;
 
     const user = await User.findOne({email: email});
@@ -43,7 +42,6 @@ router.post("/login", async (req, res) =>{
         console.log(err);
         res.status(500).json({ message: "Failed to login!" });
     }
-})
+}
 
-
-module.exports = router
+module.exports = login
