@@ -57,3 +57,19 @@
 
 
 }
+
+.error {
+    border: 2px solid red;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
