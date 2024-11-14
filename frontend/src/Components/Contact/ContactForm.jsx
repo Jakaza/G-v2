@@ -14,6 +14,8 @@ const ContactForm = () => {
 
   const [errorMessage, setErrorMessage] = useState("");
   const [fieldErrors, setFieldErrors] = useState({});
+  const [loading, setLoading] = useState(false); 
+  const [isSuccess, setIsSuccess] = useState(false); 
 
   const validateForm = () => {
     const name = form.current.from_name.value.trim();
@@ -32,7 +34,8 @@ const ContactForm = () => {
   };
 
   const handleInputChange = () => {
-    setErrorMessage("");  // Reset error message when user types
+    setErrorMessage("");  
+    setIsSuccess(false);
     setFieldErrors((prevErrors) => {
       const updatedErrors = { ...prevErrors };
       Object.keys(updatedErrors).forEach((key) => {
@@ -52,14 +55,16 @@ const ContactForm = () => {
     }
 
     setErrorMessage("");
+    setLoading(true);
 
-    // Basic form validation
+
     const name = form.current.from_name.value.trim();
     const email = form.current.user_email.value.trim();
     const message = form.current.message.value.trim();
 
     if (!name || !email || !message) {
       toast.error("Please fill out all fields.");
+      setLoading(false);
       return;
     }
 
@@ -72,13 +77,14 @@ const ContactForm = () => {
       )
       .then(
         () => {
-          toast.success("Your message has been sent successfully!");
-
+          setIsSuccess(true); 
+          setLoading(false);
+          
           emailjs.send(
             SERVICE_ID, // Service ID for the auto-reply
             AUTO_REPLY_TEMPLATE_ID, // Auto-reply template ID from EmailJS
             {
-              to_name: name,
+              from_name: name,
               user_email: email,
               message: message,
             },
@@ -112,7 +118,7 @@ const ContactForm = () => {
             name="from_name"
             placeholder="Enter your name"
             className={fieldErrors.name ? "error" : ""}
-            onChange={handleInputChange}  // Reset errors when user types
+            onChange={handleInputChange} // Reset errors when user types
           />
           {fieldErrors.name && <div className="error-text">{fieldErrors.name}</div>}
         </div>
@@ -124,7 +130,7 @@ const ContactForm = () => {
             name="user_email"
             placeholder="Enter your email"
             className={fieldErrors.email ? "error" : ""}
-            onChange={handleInputChange}  // Reset errors when user types
+            onChange={handleInputChange} // Reset errors when user types
           />
           {fieldErrors.email && <div className="error-text">{fieldErrors.email}</div>}
         </div>
@@ -135,15 +141,29 @@ const ContactForm = () => {
             name="message"
             placeholder="Enter your message"
             className={fieldErrors.message ? "error" : ""}
-            onChange={handleInputChange}  // Reset errors when user types
+            onChange={handleInputChange} // Reset errors when user types
           ></textarea>
           {fieldErrors.message && <div className="error-text">{fieldErrors.message}</div>}
         </div>
-        <button type="submit" className="btn">Send Message</button>
+
+        {/* Show loading spinner when sending email */}
+        <button type="submit" className="btn" disabled={loading}>
+          {loading ? (
+            <span className="">⏳ Sending... please wait</span> // Spinner for loading state
+          ) : (
+            "Submit"
+          )}
+        </button>
       </form>
+
+      {/* Show success message when email is successfully sent */}
+      {isSuccess && <div className="success-message">Thank you! Your message has been sent successfully.</div>}
+
       <a href="mailto:aakash.sh858791@gmail.com" className="direct-email">
         Send me email directly
       </a>
+      
+      <ToastContainer />
     </div>
   );
 };
